@@ -47,4 +47,4 @@ I approached the problem by iterating through both **permutations** `A` and `B` 
 **Result:**
 After processing all the elements, the array `arr` will contain the **prefix common array** for arrays `A` and `B`, where `arr[i]` denotes how many common elements there are between the two arrays from index `0` to index `i`.
 
-> Daily Challange 14-01-2025
+> Daily Challenge 14-01-2025
