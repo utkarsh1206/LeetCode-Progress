@@ -16,26 +16,26 @@ Given an array `derived`, your task is to determine whether there exists a **val
 
 **Example 1:**
 
-> **Input:** derived = [1,1,0]
-> **Output:** true
-> **Explanation:** A valid original array that gives derived is [0,1,0].
-> derived[0] = original[0] ⊕ original[1] = 0 ⊕ 1 = 1
-> derived[1] = original[1] ⊕ original[2] = 1 ⊕ 0 = 1
-> derived[2] = original[2] ⊕ original[0] = 0 ⊕ 0 = 0
+> **Input:** derived = [1,1,0]\
+> **Output:** true\
+> **Explanation:** A valid original array that gives derived is [0,1,0].\
+> derived[0] = original[0] ⊕ original[1] = 0 ⊕ 1 = 1\
+> derived[1] = original[1] ⊕ original[2] = 1 ⊕ 0 = 1\
+> derived[2] = original[2] ⊕ original[0] = 0 ⊕ 0 = 0\
 
 **Example 2:**
 
-> **Input:** derived = [1,1]
-> **Output:** true
-> **Explanation:** A valid original array that gives derived is [0,1].
-> derived[0] = original[0] ⊕ original[1] = 1
-> derived[1] = original[1] ⊕ original[0] = 1
+> **Input:** derived = [1,1]\
+> **Output:** true\
+> **Explanation:** A valid original array that gives derived is [0,1].\
+> derived[0] = original[0] ⊕ original[1] = 1\
+> derived[1] = original[1] ⊕ original[0] = 1\
 
 **Example 3:**
 
-> **Input:** derived = [1,0]
-> **Output:** false
-> **Explanation:** There is no valid original array that gives derived.
+> **Input:** derived = [1,0]\
+> **Output:** false\
+> **Explanation:** There is no valid original array that gives derived.\
 
 **Constraints:**
 
@@ -54,9 +54,9 @@ Now, XOR is both commutative and associative. This means the order in which we a
 
 We can see that in our `derived` (which satisfies the problem,) each element occurs twice. On taking the XOR of each element of `derived`, we get `0`.
 
-> `(a ⊕ b) ⊕ (b ⊕ c) ⊕ (c ⊕ a)`
-> `(a ⊕ a) ⊕ (b ⊕ b) ⊕ (c ⊕ c)`
-> `(0) ⊕ (0) ⊕ (0)`
+> `(a ⊕ b) ⊕ (b ⊕ c) ⊕ (c ⊕ a)`\
+> `(a ⊕ a) ⊕ (b ⊕ b) ⊕ (c ⊕ c)`\
+> `(0) ⊕ (0) ⊕ (0)`\
 > `0`
 
 Therefore if the XOR of the `derived` is 0, then there exists and `original`, and vice-versa.
@@ -72,4 +72,4 @@ The `for` loop iterates over each element in the `derived` array, and for each e
 
 After the loop finishes, we check if the XOR of all elements in the `derived` array (`result`) is equal to `0`. If `result == 0`, it means that a valid original array exists, and we return `true`. Otherwise, we return `false`.
 
-> Daily Challange 17-01-2025
+> Daily Challenge 17-01-2025

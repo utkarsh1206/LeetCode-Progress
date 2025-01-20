@@ -2,9 +2,9 @@
 
 ### 407. Trapping Rain Water II
 
-Given an `m x n` integer matrix `heightMap` representing the height of each unit cell in a 2D elevation map, return __the volume of water it can trap after raining__.
+Given an `m x n` integer matrix `heightMap` representing the height of each unit cell in a 2D elevation map, return _the volume of water it can trap after raining_.
 
-**Example 1:**
+**Example 1:**\
 ![alt text](https://assets.leetcode.com/uploads/2021/04/08/trap1-3d.jpg)
 
 > **Input:** heightMap = [[1,4,3,1,3,2],[3,2,1,3,2,4],[2,3,3,2,3,1]]\
@@ -13,7 +13,7 @@ Given an `m x n` integer matrix `heightMap` representing the height of each unit
 > We have two small ponds 1 and 3 units trapped.\
 > The total volume of water trapped is 4.\
 
-**Example 2:**
+**Example 2:**\
 ![alt text](https://assets.leetcode.com/uploads/2021/04/08/trap2-3d.jpg)
 
 > **Input:** heightMap = [[3,3,3,3,3],[3,2,2,2,3],[3,2,1,2,3],[3,2,2,2,3],[3,3,3,3,3]]\

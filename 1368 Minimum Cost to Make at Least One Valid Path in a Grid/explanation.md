@@ -15,10 +15,10 @@ You will initially start at the upper left cell `(0, 0)`. A valid path in the gr
 
 You can modify the sign on a cell with `cost = 1`. You can modify the sign on a cell **one time only**.
 
-Return __the minimum cost to make the grid have at least one valid path__.
+Return _the minimum cost to make the grid have at least one valid path_.
 
-**Example 1:**
-![alttext](https://assets.leetcode.com/uploads/2020/02/13/grid1.png)
+**Example 1:**\
+![alt text](https://assets.leetcode.com/uploads/2020/02/13/grid1.png)
 
 > **Input:** grid = [[1,1,1,1],[2,2,2,2],[1,1,1,1],[2,2,2,2]]\
 > **Output:** 3\
@@ -26,7 +26,7 @@ Return __the minimum cost to make the grid have at least one valid path__.
 > The path to (3, 3) is as follows. (0, 0) --> (0, 1) --> (0, 2) --> (0, 3) change the arrow to down with cost = 1 --> (1, 3) --> (1, 2) --> (1, 1) --> (1, 0) change the arrow to down with cost = 1 --> (2, 0) --> (2, 1) --> (2, 2) --> (2, 3) change the arrow to down with cost = 1 --> (3, 3)\
 > The total cost = 3.
 
-**Example 2:**
+**Example 2:**\
 ![alt text](https://assets.leetcode.com/uploads/2020/02/13/grid2.png)
 
 > **Input:** grid = [[1,1,3],[3,2,2],[1,1,4]]\
