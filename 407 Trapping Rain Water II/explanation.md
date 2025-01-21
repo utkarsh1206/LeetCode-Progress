@@ -11,7 +11,7 @@ Given an `m x n` integer matrix `heightMap` representing the height of each unit
 > **Output:** 4\
 > **Explanation:** After the rain, water is trapped between the blocks.\
 > We have two small ponds 1 and 3 units trapped.\
-> The total volume of water trapped is 4.\
+> The total volume of water trapped is 4.
 
 **Example 2:**\
 ![alt text](https://assets.leetcode.com/uploads/2021/04/08/trap2-3d.jpg)

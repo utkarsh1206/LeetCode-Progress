@@ -13,7 +13,7 @@ Return _the smallest index `i` at which either a row or a column will be complet
 
 > **Input:** arr = [1,3,4,2], mat = [[1,4],[2,3]]\
 > **Output:** 2\
-> **Explanation:** The moves are shown in order, and both the first row and second column of the matrix become fully painted at arr[2].\
+> **Explanation:** The moves are shown in order, and both the first row and second column of the matrix become fully painted at arr[2].
 
 **Example 2:**\
 ![alt text](https://assets.leetcode.com/uploads/2023/01/18/grid2.jpg "image explanation for example 2")
@@ -42,6 +42,6 @@ I then initialized two other hashMaps `rowCount` and `colCount`. These two will 
 
 For each index in `arr`, I checked the value of `arr[i]` in the `valuePositions` map, from where I got the `row` and `column`.
 
-If and when the frequency of a particular `row` or `col` was equal to the length of `col` and length of `row` respectivly, I returned the value of `i` which is the index of the element in `arr` when a `row` or `col` was fully painted.
+If and when the frequency of a particular `row` or `col` was equal to the length of `col` and length of `row` respectively, I returned the value of `i` which is the index of the element in `arr` when a `row` or `col` was fully painted.
 
 > Daily Challenge 20-01-2025

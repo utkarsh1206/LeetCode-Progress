@@ -33,8 +33,8 @@ Return _the minimum cost to make the grid have at least one valid path_.
 > **Output:** 0\
 > **Explanation:** You can follow the path from (0, 0) to (2, 2).
 
-**Example 3:**
-1[alt text](https://assets.leetcode.com/uploads/2020/02/13/grid3.png)
+**Example 3:**\
+![alt text](https://assets.leetcode.com/uploads/2020/02/13/grid3.png)
 
 > **Input:** grid = [[1,2],[4,3]]\
 > **Output:** 1
