@@ -26,13 +26,13 @@ Return _an array containing all the **safe nodes** of the graph_. The answer sho
 
 **Constraints:**
 
-> `n == graph.length`
-> `1 <= n <= 104`
-> `0 <= graph[i].length <= n`
-> `0 <= graph[i][j] <= n - 1`
-> `graph[i]` is sorted in a strictly increasing order.
-> The graph may contain self-loops.
-> The number of edges in the graph will be in the range `[1, 4 * 10^4]`.
+* `n == graph.length`
+* `1 <= n <= 104`
+* `0 <= graph[i].length <= n`
+* `0 <= graph[i][j] <= n - 1`
+* `graph[i]` is sorted in a strictly increasing order.
+* The graph may contain self-loops.
+* The number of edges in the graph will be in the range `[1, 4 * 10^4]`.
 
 ## Explanation
 
@@ -50,7 +50,7 @@ The question is, how do we efficiently traverse from terminal nodes to nodes tha
 
 Let's put this new graph to use now. A node is a safe node if all of its incoming edges come from previously identified safe nodes in the graph. If we erase the edges outgoing from the safe node and discover a node with no incoming edges, it is a new safe node. This gives us hints for thinking about Kahn's method, which does a topological sort by removing the edges in the exact way we want.
 
-A topological sort or topological ordering of a directed graph is a linear ordering of its vertices such that for every directed edge `u -> v` from vertex `u` to vertex `v`, u` comes before `v` in the ordering.
+A topological sort or topological ordering of a directed graph is a linear ordering of its vertices such that for every directed edge `u -> v` from vertex `u` to vertex `v`, `u` comes before `v` in the ordering.
 
 In a directed acyclic graph, we can use Kahn's algorithm to get the topological ordering. Kahn’s algorithm works by keeping track of the number of incoming edges into each node (indegree). It works by repeatedly visiting the nodes with an indegree of zero and deleting all the edges associated with it leading to a decrement of indegree for the nodes whose incoming edges are deleted. This process continues until no elements with zero indegree can be found.
 
